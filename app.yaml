@@ -1,0 +1,6 @@
+runtime: python39  # or your preferred Python version
+entrypoint: gunicorn -b :$PORT app:app  # replace 'app' with your main Flask file name
+
+handlers:
+- url: /.*
+  script: auto
