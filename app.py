@@ -11,7 +11,6 @@ recommendations = {
     'rock': ['Song C', 'Song D']
 }
 
-
 @app.route('/user', methods=['POST'])
 def create_user_profile():
     data = request.json
